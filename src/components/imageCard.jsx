@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 25,
     color: "#ffff",
   },
+
   media: {
     height: 320,
     paddingTop: "56.25%", // 16:9
@@ -56,12 +57,15 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Poppins",
   },
 
-  text: {
-    color: "#fff",
+  subheader: {
+    fontSize: 95,
+    color: "#ffff",
+    fontWeight: "bold",
+    fontFamily: "Poppins",
   },
 }));
 
-function RecipeReviewCard() {
+function RecipeReviewCard(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -82,8 +86,8 @@ function RecipeReviewCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="YG OG 4Hunnid"
-        subheader="Cookies Delta 8"
+        title={props.title}
+        subheader="Mint"
       />
       <CardMedia
         className={classes.media}
@@ -97,9 +101,7 @@ function RecipeReviewCard() {
           className={classes.body2}
           component="p"
         >
-          Blue Nova is a sativa-hybrid in the LIFT series. Bred from the classic
-          Blueberry and Haze strains, this high-potency strain has a
-          delightfully sweet berry taste.
+          {props.description}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -122,28 +124,13 @@ function RecipeReviewCard() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Method:</Typography>
-          <Typography paragraph>
-            Heat 1/2 cup of the broth in a pot until simmering, add saffron and
-            set aside for 10 minutes.
-          </Typography>
-          <Typography paragraph>
-            Dried cannabis flower is primarily ingested via inhalation, either
-            by smoking or vaporizing the product. Activation time for smoking or
-            vaping is roughly about 5 minutes and can last up to a few hours.
-          </Typography>
-          <Typography paragraph>
-            Add rice and stir very gently to distribute. Top with artichokes and
-            peppers, and cook without stirring, until most of the liquid is
-            absorbed, 15 to 18 minutes. Reduce heat to medium-low, add reserved
-            shrimp and mussels, tucking them down into the rice, and cook again
-            without stirring, until mussels have opened and rice is just tender,
-            5 to 7 minutes more. (Discard any mussels that don’t open.)
-          </Typography>
-          <Typography>
-            Set aside off of the heat to let rest for 10 minutes, and then
-            serve.
-          </Typography>
+          <Typography paragraph>Description:</Typography>
+          <Typography paragraph>{props.secondDescription}</Typography>
+          <Typography paragraph>{props.Attribute} </Typography>
+          <Typography paragraph>{props.subDescription}</Typography>
+          <Typography paragraph>{props.categorie}</Typography>
+          <Typography paragraph>{props.categorieDescription}</Typography>
+          <Typography paragraph>{props.disclosure}</Typography>
         </CardContent>
       </Collapse>
     </Card>

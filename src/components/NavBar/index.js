@@ -36,7 +36,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   const classes = useStyles();
   return (
     <>
@@ -54,13 +54,13 @@ const Navbar = () => {
               </div>
             </NavLogo>
           </div>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu className={classes.text}>
             {" "}
             <NavItem>
-              <NavLinks to="about">ABOUT US</NavLinks>
+              <NavLinks to="About">ABOUT US</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="Shop">SHOP MENU</NavLinks>
@@ -70,8 +70,8 @@ const Navbar = () => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <OutlinedCustomButton text={"Sign In"} />
-            {/* <NavBtnLink to="/signin">Sign In</NavBtnLink> */}
+            {/* <OutlinedCustomButton text={"Sign In"} /> */}
+            <NavBtnLink to="/signin">Sign In</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

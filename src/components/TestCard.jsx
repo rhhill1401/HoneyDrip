@@ -25,9 +25,18 @@ const useStyles = makeStyles({
   pos: {
     marginBottom: 12,
   },
+
+  period: {
+    fontFamily: "Poppins",
+    fontStyle: "normal",
+    fontWeight: 100,
+    fontSize: 100,
+    maxHeight: -0,
+    color: "#FFC758",
+  },
 });
 
-function SimpleCard() {
+function SimpleCard(props) {
   const classes = useStyles();
 
   return (
@@ -38,12 +47,11 @@ function SimpleCard() {
           color="textSecondary"
           gutterBottom
         >
-          EXPECT BETTER PERIOD<Typography className="dot">.</Typography>
+          EXPECT BETTER PERIOD<span className={classes.period}>.</span>
         </Typography>
 
         <Typography variant="h5" component="h2">
-          The highest quality CBD and THC by the top brands delivered straight
-          to your door.
+          {props.subTitle}
         </Typography>
       </CardContent>
       <CardActions style={{ marginTop: 70 }}>
