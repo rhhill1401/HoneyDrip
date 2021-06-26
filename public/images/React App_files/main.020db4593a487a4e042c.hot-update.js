@@ -1,0 +1,15 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/components/fourthCard.jsx":
+/*!***************************************!*\
+  !*** ./src/components/fourthCard.jsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/react-scripts/node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/terryhill/Desktop/HoneyDrip/honey-drip/src/components/fourthCard.jsx: Unexpected token (58:6)\n\n\u001b[0m \u001b[90m 56 |\u001b[39m     \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m{classes\u001b[33m.\u001b[39mroot}\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m     \u001b[33m<\u001b[39m\u001b[33mPaper\u001b[39m \u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"container0\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"Title\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m           {\u001b[32m\" \"\u001b[39m}\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mh1\u001b[39m className\u001b[33m=\u001b[39m{classes\u001b[33m.\u001b[39m\u001b[33mHeadline\u001b[39m}\u001b[33m>\u001b[39m\u001b[33mBRANDS\u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mh1\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n    at Object._raise (/Users/terryhill/Desktop/HoneyDrip/honey-drip/node_modules/@babel/parser/lib/index.js:816:17)\n    at Object.raiseWithData (/Users/terryhill/Desktop/HoneyDrip/honey-drip/node_modules/@babel/parser/lib/index.js:809:17)\n    at Object.raise (/Users/terryhill/Desktop/HoneyDrip/honey-drip/node_modules/@babel/parser/lib/index.js:770:17)\n    at Object.unexpected (/Users/terryhill/Desktop/HoneyDrip/honey-drip/node_modules/@babel/parser/lib/index.js:9896:16)\n    at Object.jsxParseIdentifier (/Users/terryhill/Desktop/HoneyDrip/honey-drip/node_modules/@babel/parser/lib/index.js:5018:12)\n    at Object.jsxParseNamespacedName (/Users/terryhill/Desktop/HoneyDrip/honey-drip/node_modules/@babel/parser/lib/index.js:5028:23)\n    at Object.jsxParseAttribute (/Users/terryhill/Desktop/HoneyDrip/honey-drip/node_modules/@babel/parser/lib/index.js:5113:22)\n    at Object.jsxParseOpeningElementAfterName (/Users/terryhill/Desktop/HoneyDrip/honey-drip/node_modules/@babel/parser/lib/index.js:5134:28)\n    at Object.jsxParseOpeningElementAt (/Users/terryhill/Desktop/HoneyDrip/honey-drip/node_modules/@babel/parser/lib/index.js:5127:17)\n    at Object.jsxParseElementAt (/Users/terryhill/Desktop/HoneyDrip/honey-drip/node_modules/@babel/parser/lib/index.js:5159:33)");
+
+/***/ })
+
+})
+//# sourceMappingURL=main.020db4593a487a4e042c.hot-update.js.map
