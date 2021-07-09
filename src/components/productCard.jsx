@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Roboto",
     fontWeight: 400,
     fontSize: 15,
-    marginBottom: 20z,
+    marginBottom: 20,
     maxWidth: 500,
     maxHeight: 80,
     minWidth: 200,
