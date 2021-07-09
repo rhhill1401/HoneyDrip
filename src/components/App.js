@@ -1,4 +1,3 @@
-//feature 1
 import React from "react";
 import Navbar from "./ShopNav/index";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
