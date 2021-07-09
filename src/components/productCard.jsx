@@ -5,7 +5,8 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import BlueButton from "./Buttons/BlueButton";
-import { PinDropSharp } from "@material-ui/icons";
+import { Hidden } from "@material-ui/core";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -14,24 +15,25 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(3),
     margin: "auto",
     maxWidth: 300,
-    minWidth: 200,
+    minWidth: 250,
     minHeight: 550,
     borderRadius: 30,
     alignItems: "center",
     textAlign: "center",
     backgroundColor: "#fff",
+
     // boxShadow: "3px 2px 8px 1px #00000040",
   },
 
   image: {
     maxWidth: 200,
-    maxHeight: 400,
-    minWidth: 30,
-    minHeight: 300,
+    maxHeight: 300,
+    minWidth: 200,
+    minHeight: 250,
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
-    marginBottom: 30,
+    marginBottom: 10,
   },
   img: {
     display: "flex",
@@ -52,14 +54,29 @@ const useStyles = makeStyles((theme) => ({
   subTitle: {
     color: "#020202",
     fontFamily: "Roboto",
+    fontWeight: 400,
+    fontSize: 15,
+    marginBottom: 20,
+    maxWidth: 500,
+    maxHeight: 80,
+    minWidth: 200,
+    minHeight: 50,
   },
 
   buttonB: {
     minWidth: "10px",
-    width: 50,
-    height: 48,
-    color: "yellow",
+    // width: 30,
+    height: 10,
     padding: 0,
+    marginTop: 30,
+  },
+
+  body2: {
+    maxWidth: 500,
+    maxHeight: 200,
+    minWidth: 200,
+    minHeight: 130,
+    marginBottom: 30,
   },
 }));
 
@@ -69,10 +86,10 @@ function ProductCard(props) {
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
-        <Grid container xs={12} spacing={2} className={classes.imgContainer}>
+        <Grid container xs={0} spacing={2} className={classes.imgContainer}>
           <Grid item>
             <ButtonBase xs={12} container item className={classes.image}>
-              <img className={classes.img} src={props.image} />
+              <img className={classes.img} src={props.image} alt="delta8" />
             </ButtonBase>
 
             <Grid item xs>
@@ -81,19 +98,20 @@ function ProductCard(props) {
                 variant="subtitle1"
                 className={classes.subTitle}
               >
-                EFFEX DIESEL PREMIUM DELTA 8 THC INFUSED HEMP FLOWER
+                {props.Title}
               </Typography>
 
-              <Typography variant="body2" color="textSecondary">
-                Delta Effex introduces our Sour Diesel Premium Delta 8 THC
-                infused hemp flower! Sour Diesel has been a fan favorite since
-                the 1990s and for good reason....
+              <Typography
+                variant="body2"
+                color="textSecondary"
+                className={classes.body2}
+              >
+                <p> {props.description}</p>
               </Typography>
             </Grid>
-            <Grid item></Grid>
-          </Grid>
-          <Grid item>
-            <BlueButton className={classes.buttonB} text="Add to cart" />
+            <Grid item xs className={classes.buttonB}>
+              <BlueButton gutterBottom text="Add to cart" />
+            </Grid>
           </Grid>
         </Grid>
       </Paper>

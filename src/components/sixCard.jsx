@@ -4,6 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import ProductCard from "./productCard";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
+import products from "../products";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -65,6 +66,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-around",
     flexWrap: "wrap",
     alignItems: "flexStart",
+
+    // padding: 90,
   },
 
   bottomContainer: {
@@ -73,9 +76,25 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "row",
     alignItems: "center",
   },
+
+  productCup: {
+    display: "flex",
+    flexDirection: "row",
+    minWidth: 300,
+  },
 }));
 
-function SixCard() {
+// function createCard(products) {
+//   return (
+//     <ProductCard
+//       Title={products.title}
+//       description={products.description}
+//       image={products.imgURL}
+//     />
+//   );
+// }
+
+function SixCard(props) {
   const classes = useStyles();
 
   return (
@@ -87,18 +106,38 @@ function SixCard() {
               August Collection
             </Typography>
           </Grid>
-          <Grid container className={classes.container} spacing={2}>
-            <Grid item xs={0} className={classes.imgCup}>
-              <ProductCard image="/images/cookiesBag-1.png" />
+          <Grid container className={classes.container} spacing={3}>
+            <Grid container item xs className={classes.productCup} spacing={0}>
+              <ProductCard
+                Title="GSC"
+                image="/images/mintsCookie-1.png"
+                description="GSC by Mints is of the best tasting and strongest strains around. This highly sought after hybrid strain is crafted by crossing OG Kush with Durban Poison."
+              />
             </Grid>
-            <Grid item xs={0} className={classes.imgCup}>
-              <ProductCard image="/images/SourDieselEffex.png" />
+            <Grid item xs className={classes.productCup}>
+              {" "}
+              <ProductCard
+                Title="Monk Fruit"
+                image="/images/cookiesBag-1.png"
+                description="Experience rich, full flavor with our CBD flower. Our flower is indoor-grown, cured, and manicured to perfection. "
+              />
             </Grid>
-            <Grid item xs={0} className={classes.imgCup}>
-              <ProductCard image="/images/ChiliLimeElGua.png" />
+
+            <Grid item xs className={classes.productCup}>
+              {" "}
+              <ProductCard
+                Title="EFFEX DIESEL PREMIUM DELTA 8 THC INFUSED HEMP FLOWER"
+                image="/images/SourDieselEffex.png"
+                description="Delta Effex introduces our Sour Diesel Premium Delta 8 THC infused hemp flower! Sour Diesel has been a fan favorite since the 1990s and for good reason...."
+              />
             </Grid>
-            <Grid item xs={0} className={classes.imgCup}>
-              <ProductCard image="/images/mintsCookie-1.png" />
+            <Grid item xs className={classes.productCup}>
+              {" "}
+              <ProductCard
+                Title="Exotic Blvd Lay's Chile Lime"
+                image="/images/ChiliLimeElGua.png"
+                description="The newest addition to our Thai collection! Enjoy the familiar lime zest flavor that's only paired better with spicy chili heat."
+              />
             </Grid>
           </Grid>
         </Grid>
@@ -106,4 +145,5 @@ function SixCard() {
     </div>
   );
 }
+
 export default SixCard;

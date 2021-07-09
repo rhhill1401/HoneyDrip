@@ -1,5 +1,13 @@
-body {
-  background-color: #103ab0;
+html {
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  height: 100vh;
+  background-color: #fff;
+  margin: 0;
+  align-items: center;
 }
 
 .App {
@@ -96,7 +104,7 @@ h2 {
   text-align: right;
   font-family: Kalam;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 33px;
   color: #ffc758;
   -webkit-text-stroke: 1px black;
 }
@@ -175,4 +183,61 @@ h2 {
   display: table;
 }
 
-/* Logos  ************************** */
+.Hero {
+  visibility: hidden;
+}
+/* Shop  ************************** */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100vw;
+}
+a:hover {
+  color: #ffc758;
+}
+header {
+  grid-area: header;
+  background-color: #f4f6f7;
+  border: 1px solid #c6c4c4;
+  color: #7f8387;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+header a {
+  color: #7f8387;
+  text-decoration: none;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #2455d5;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Rectangle 10 */
+
+position: absolute;
+width: 1440px;
+height: 113px;
+left: 0px;
+top: 161px;
+
+background: #f4f6f7;
+border: 1px solid #c6c4c4;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
