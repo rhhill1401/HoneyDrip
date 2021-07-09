@@ -78,7 +78,7 @@ export const ShopNow = () => {
             </Li>
             <Li>
               {" "}
-              <Lia href="/">Pre-Rolls</Lia>{" "}
+              <Lia href="/preRolls">Pre-Rolls</Lia>{" "}
             </Li>
             <Li>
               {" "}
