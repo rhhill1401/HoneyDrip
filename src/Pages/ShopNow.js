@@ -16,7 +16,6 @@ class ShopNow extends React.Component {
     };
   }
 
-products-components
   render() {
     return (
       <div>
@@ -66,43 +65,6 @@ products-components
           </main>
           <footer>All right is reserved.</footer>
         </div>
-
-export const ShopNow = () => {
-  const classes = useStyles();
-  return (
-    <div className={classes.root}>
-      <div className="grid-container">
-        <header>
-          <Ul>
-            <Li>
-              {" "}
-              <Lia href="/">React Shopping Cart</Lia>{" "}
-            </Li>
-            <Li>
-              {" "}
-              <Lia href="/preRolls">Pre-Rolls</Lia>{" "}
-            </Li>
-            <Li>
-              {" "}
-              <Lia href="/">Vaporizers</Lia>{" "}
-            </Li>
-            <Li>
-              {" "}
-              <Lia href="/">Edibiles</Lia>
-            </Li>
-            <Li>
-              {" "}
-              <Lia href="/">Tropicals</Lia>
-            </Li>
-            <Li>
-              {" "}
-              <Lia href="/">Clothing</Lia>
-            </Li>
-          </Ul>
-        </header>
-        <main>Product List</main>
-        <footer>All right is reserved.</footer>
-
       </div>
     );
   }
