@@ -7,7 +7,7 @@ import About from "../Pages/About";
 import Location from "../Pages/Location";
 import Menu from "../Pages/Menu";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Navbar />
@@ -20,5 +20,5 @@ function App() {
       </Switch>
     </Router>
   );
-}
+};
 export default App;

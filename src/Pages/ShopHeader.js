@@ -27,3 +27,16 @@ export const Lia = styled.a`
   text-decoration: none;
   color: #7f8387;
 `;
+
+// export const Content = styled.div`
+//   display: flex;
+//   flex-wrap: wrap;
+// `;
+
+// export const Main = styled.div`
+//   flex: 3 60rem;
+// `;
+
+// export const sidebar = styled.div`
+//   flex: 1 20rem;
+// `;
