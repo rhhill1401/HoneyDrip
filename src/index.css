@@ -229,15 +229,80 @@ footer {
   align-items: center;
 }
 
-/* Rectangle 10 */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main {
+  flex: 3 60rem;
+}
+.sidebar {
+  flex: 1 20rem;
+}
 
-position: absolute;
-width: 1440px;
-height: 113px;
-left: 0px;
-top: 161px;
+/* Products */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
 
-background: #f4f6f7;
-border: 1px solid #c6c4c4;
-box-sizing: border-box;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.products li {
+  flex: 0 1 29rem;
+  height: 17rem;
+  padding: 3rem;
+}
+
+.product {
+  display: flex;
+  max-width: 60%;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product img {
+  padding-top: 2rem;
+  max-width: 20rem;
+  max-height: 10rem;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price div,
+.product-price button {
+  /* text-align: center; */
+  flex: 1;
+  /* background-color: blueviolet; */
+}
+
+.product-price div {
+  font-size: 1.4rem;
+  font-family: Poppins;
+  font-style: Roboto;
+  color: #333333;
+  font-style: thin;
+}
+
+/* EFFEX DIESEL PREMIUM DELTA 8 THC INFUSED HEMP FLOWER */
+
+/* position: absolute;
+width: 323px;
+height: 11px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.03em;
+
+color: #020202; */

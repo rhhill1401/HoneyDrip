@@ -1,0 +1,57 @@
+{
+  "products": [
+    {
+      "_id": "pod",
+      "title": "GSC by MINTS ",
+      "image": "/images/mintsCookie-1.png",
+      "description": "about pod 1",
+      "price": 30,
+      "amount": ["500mg"]
+    },
+
+    {
+      "_id": "flower",
+      "title": "Monk Fruit",
+      "image": "/images/cookiesBag-1.png",
+      "description": " CBD flower",
+      "price": 30,
+      "amount": ["8TH"]
+    },
+
+    {
+      "_id": "flower",
+      "title": "EFFEX DIESEL PREMIUM DELTA 8 THC INFUSED HEMP FLOWER ",
+      "image": "/images/SourDieselEffex.png",
+      "description": "CBD FLOWER",
+      "price": 50,
+      "amount": ["8TH"]
+    },
+
+    {
+      "_id": "Snacks",
+      "title": " Exotic Blvd Lay's Chile Lime",
+      "image": "/images/ChiliLimeElGua.png",
+      "description": "CBD FLOWER",
+      "price": 30,
+      "amount": ["8TH"]
+    },
+
+    {
+      "_id": "Snacks",
+      "title": " Exotic Blvd Lay's Chile Lime",
+      "image": "/images/ChiliLimeElGua.png",
+      "description": "CBD FLOWER",
+      "price": 30,
+      "amount": ["8TH"]
+    },
+
+    {
+      "_id": "Snacks",
+      "title": " Exotic Blvd Lay's Chile Lime",
+      "image": "/images/ChiliLimeElGua.png",
+      "description": "CBD FLOWER",
+      "price": 30,
+      "amount": ["8TH"]
+    }
+  ]
+}

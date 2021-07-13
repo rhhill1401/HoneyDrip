@@ -4,7 +4,6 @@ import Paper from "@material-ui/core/Paper";
 import ProductCard from "./productCard";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import products from "../products";
 
 const useStyles = makeStyles((theme) => ({
   root: {
