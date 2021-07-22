@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ShopButton from "./Buttons/ShopButton";
-import formatCurrency from "../util";
+import formatCurrency from "../Shop/util";
+
 export default class Products extends Component {
   render() {
     return (
@@ -11,7 +12,7 @@ export default class Products extends Component {
               <div className="product">
                 <a href={"#" + product._id}>
                   <img src={product.image} alt="{product.title}"></img>
-                  <p>{product.title}</p>
+                  <p className="product-title">{product.title}</p>
                 </a>
                 <div className="product-price">
                   <div>{formatCurrency(product.price)}</div>
