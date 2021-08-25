@@ -21,7 +21,7 @@ const useStyles = makeStyles({
       color: "#545Af6",
     },
 
-    color: "#fff",
+    color: "#fffffff",
     padding: "6px 12px",
     fontFamily: ["Roboto"],
     fontStyle: "normal",
